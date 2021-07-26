@@ -12,8 +12,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "cypress:open1": "cypress open --config integrationFolder=\"cypress/integration/test\"",
-    "cypress:open2": "cypress open  --config integrationFolder=\"cypress/integration/test\",userAgent=mobile"
+    "cypress:open1": "cypress run --config integrationFolder=\"cypress/integration/test\"",
+    "cypress:open2": "cypress run  --config integrationFolder=\"cypress/integration/test\",userAgent=mobile"
   },
   "author": "",
   "license": "ISC"
