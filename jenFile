@@ -15,15 +15,11 @@ pipeline {
          stage('run') {
             steps {
                sh 'npm start'
-              }
-        }
-        
-        stage('run2') {
-            steps {
                sh 'npm run cypress:open1'
               }
         }
         
+       
         
       }
 }
