@@ -7,10 +7,14 @@ pipeline {
                git 'https://github.com/yom99/testing.git'
             }
         }
-         stage('run') {
+         stage('insall npm') {
             steps {
                sh 'npm install'
-                sh 'npm start'
+            }
+        }
+         stage('run') {
+            steps {
+               sh 'npm run cypress:open1'
             }
         }
         
