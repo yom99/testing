@@ -28,11 +28,21 @@ pipeline {
               
         }
         
-        stage('Parallel Stage') {
-            steps {
-               sh 'npm run cypress:open1'
-               sh 'npm run cypress:open2'
+        stage('Parallel Stage1') {
+            parallel{
+                stage('A'){
+                    steps {
+               echo 'yumna'
               }
+                }
+
+                 stage('B'){
+                    steps {
+               echo 'yumna2'
+              }
+                }
+            }
+            
         }
 
 
