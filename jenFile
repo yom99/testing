@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('initial') {
             steps {
-                echo 'Hello World'
+                npm init
             }
         }
     }
