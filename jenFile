@@ -1,16 +1,9 @@
 pipeline {
     agent any
-
     options {
         parallelsAlwaysFailFast()
-         ansiColor('xterm')
     }
     stages {
-      stage('Build') {
-            steps {
-                echo '\033[34mHello\033[0m \033[33mcolorful\033[0m \033[35mworld!\033[0m'
-            }
-        }
         stage('initial') {
             steps {
                git 'https://github.com/yom99/testing.git'
@@ -27,14 +20,13 @@ pipeline {
                sh 'npx wait-port localhost:8080'
               }
         }
-           stage('run') {
+        
+        stage('run') {
             steps {
                sh 'npm run cypress:open1'
               }
               
         }
-        
-       
         
         stage('Parallel Stage1') {
             parallel{
