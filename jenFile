@@ -9,8 +9,9 @@ pipeline {
         }
         stage('start server') {
             steps {
-               call 'npm install'
+               call npm install
+
             }
-        }
+        
     }
 }
