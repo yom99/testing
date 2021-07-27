@@ -23,6 +23,9 @@ pipeline {
             steps {
                sh 'npm run cypress:open1'
               }
+              steps {
+               sh 'npm run cypress:open2'
+              }
         }
         
        
