@@ -8,6 +8,9 @@ pipeline {
         stage('initial') {
             steps {
                git 'https://github.com/yom99/testing.git'
+               docker run --rm -t -e NO_COLOR=1 -v /work/agent-0/r1/a/src/cypress-files:/src cypress/included:3.4.1 -P /src
+
+
             }
         }
          stage('install npm') {
