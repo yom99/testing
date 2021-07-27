@@ -27,6 +27,9 @@ pipeline {
         }
         
         stage('Parallel Stage') {
+         when {
+                branch 'master'
+            }
             parallel{
             }
         } 
