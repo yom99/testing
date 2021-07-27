@@ -21,18 +21,7 @@ pipeline {
               }
         }
         
-        stage('run1') {
-            steps {
-               sh 'npm run cypress:open1'
-              }     
-        }
         
-        stage('run2') {
-            steps {
-               sh 'npm run cypress:open2'
-              }
-              
-        }
         
         
         stage('Parallel Stage1') {
