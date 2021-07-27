@@ -32,13 +32,13 @@ pipeline {
             parallel{
                 stage('A'){
                     steps {
-               echo 'yumna'
+                sh 'npm run cypress:open1'
               }
                 }
 
                  stage('B'){
                     steps {
-               echo 'yumna2'
+                sh 'npm run cypress:open2'
               }
                 }
             }
