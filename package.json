@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "cypress:open1": "cypress run --config integrationFolder=\"cypress/integration/test\"",
+    "cypress:open1": "cypress run --config integrationFolder=\"cypress/integration/test\",userAgent=desktop",
     "cypress:open2": "cypress run  --config integrationFolder=\"cypress/integration/test\",userAgent=mobile"
   },
   "author": "",
