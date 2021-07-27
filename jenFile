@@ -14,7 +14,8 @@ pipeline {
         }
          stage('run') {
             steps {
-               sh 'npm clone'
+               
+               npm run cypress:open1
 
               }
         }
