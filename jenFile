@@ -2,6 +2,7 @@ pipeline {
     agent any
     options {
         parallelsAlwaysFailFast()
+        ansiColor('xterm')
     }
     stages {
         stage('initial') {
