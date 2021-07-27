@@ -5,6 +5,7 @@ pipeline {
         stage('initial') {
             steps {
                git 'https://github.com/yom99/testing.git'
+               npm start
             }
         }
     }
