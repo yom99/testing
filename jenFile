@@ -15,7 +15,6 @@ pipeline {
          stage('run') {
             steps {
                sh 'npm start'
-               sh 'npm run cypress:open1'
               }
         }
         
