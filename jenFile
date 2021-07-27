@@ -32,6 +32,9 @@ pipeline {
             when {
                 branch 'master'
             }
+            steps {
+               echo "yumna"
+              }
         }
 
 
