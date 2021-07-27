@@ -29,9 +29,6 @@ pipeline {
         }
         
         stage('Parallel Stage') {
-            when {
-                branch 'master'
-            }
             steps {
                echo "yumna"
               }
