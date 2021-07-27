@@ -5,7 +5,11 @@ pipeline {
         stage('initial') {
             steps {
                git 'https://github.com/yom99/testing.git'
-               
+            }
+        }
+        stage('start server') {
+            steps {
+               npm start
             }
         }
     }
