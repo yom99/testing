@@ -20,6 +20,12 @@ pipeline {
                sh 'npx wait-port localhost:8080'
               }
         }
+           stage('run') {
+            steps {
+               sh 'npm run cypress:open1'
+              }
+              
+        }
         
        
         
